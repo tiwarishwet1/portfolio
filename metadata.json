@@ -1,0 +1,8 @@
+{
+  "name": "Shwet Tiwari Portfolio",
+  "description": "Production-ready systems engineering and quantitative finance portfolio website for Shwet Tiwari.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
