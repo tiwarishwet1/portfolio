@@ -11,7 +11,6 @@ const LearningJourney = lazy(() => import('../components/LearningJourney'));
 const Skills = lazy(() => import('../components/Skills'));
 const Timeline = lazy(() => import('../components/Timeline'));
 const Research = lazy(() => import('../components/Research'));
-const Writing = lazy(() => import('../components/Writing'));
 const Certifications = lazy(() => import('../components/Certifications'));
 const Github = lazy(() => import('../components/Github'));
 const Footer = lazy(() => import('../components/Footer'));
@@ -71,9 +70,6 @@ export default function Home() {
             <Research />
           </div>
 
-          <div id="writing">
-            <Writing />
-          </div>
 
           <div id="certifications">
             <Certifications />

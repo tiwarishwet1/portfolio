@@ -4,7 +4,7 @@ import Card from './Card';
 
 export default function About() {
   const stats = [
-    { label: 'LeetCode Solved', value: '650+', detail: 'Top 5% Global Badge' },
+    { label: 'SAHAI ML Accuracy', value: '98.46%', detail: 'Multimodal Fusion Model' },
     { label: 'API Latency Reduc.', value: '-94%', detail: 'FastAPI microservices' },
     { label: 'Database Optimization', value: '-98%', detail: 'MS SQL Server queries' },
     { label: 'AI Validation Pipeline', value: '-92%', detail: 'Regression reduction' },
@@ -124,7 +124,7 @@ export default function About() {
             </div>
 
             <div className="mt-6 pt-4 border-t border-border-subtle/30 flex items-center justify-between text-[10px] font-mono text-text-secondary">
-              <span>LEETCODE RANK: TOP 5%</span>
+              <span>IBM SKILLSBUILD PROGRAM</span>
               <span className="text-emerald-400">STATUS: OPTIMIZED</span>
             </div>
           </Card>

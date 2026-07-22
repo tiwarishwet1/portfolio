@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { Github, Linkedin, Mail, Send, ArrowUp, Globe, BookOpen } from 'lucide-react';
+import { Github, Linkedin, Mail, Send, ArrowUp } from 'lucide-react';
 import Button from './Button';
 import Card from './Card';
 
@@ -45,8 +45,6 @@ function DatabaseIcon(props: React.SVGProps<SVGSVGElement>) {
 const socialLinks = [
   { name: 'GitHub', href: 'https://github.com/tiwarishwet1', icon: Github },
   { name: 'LinkedIn', href: 'https://linkedin.com/in/tiwarishwet1', icon: Linkedin },
-  { name: 'Medium', href: 'https://medium.com', icon: BookOpen },
-  { name: 'Hashnode', href: 'https://hashnode.com', icon: Globe },
   { name: 'Docker Hub', href: 'https://hub.docker.com', icon: Github }, // Fallback to Github icon or direct text
   { name: 'Hugging Face', href: 'https://huggingface.co', icon: BrainIcon },
   { name: 'Kaggle', href: 'https://kaggle.com', icon: DatabaseIcon },
