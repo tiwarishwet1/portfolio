@@ -22,8 +22,8 @@ export const NAV_ITEMS = [
 ];
 
 export const SITE_METADATA = {
-  title: 'Shwet Tiwari - Research & Systems Portfolio',
+  title: 'Shwet Tiwari - AI & Backend Engineer Portfolio',
   author: 'Shwet Tiwari',
-  role: 'Research Engineer & System Architect',
+  role: 'AI & Backend Engineer',
   email: 'tiwarishwet30@gmail.com',
 };

@@ -1,13 +1,13 @@
 import React from 'react';
-import { Code2, Cpu, LineChart, ShieldCheck } from 'lucide-react';
+import { Code2, Cpu, Wrench, ShieldCheck } from 'lucide-react';
 import Card from './Card';
 
 export default function About() {
   const stats = [
     { label: 'LeetCode Solved', value: '650+', detail: 'Top 5% Global Badge' },
-    { label: 'API Latency Reduc.', value: '-64%', detail: 'Using Async pools' },
-    { label: 'Cloud Infrastructure', value: 'AWS/Docker', detail: 'Highly Scalable VPS' },
-    { label: 'Mathematical Focus', value: 'Quant-ML', detail: 'Macro risk models' },
+    { label: 'API Latency Reduc.', value: '-94%', detail: 'FastAPI microservices' },
+    { label: 'Database Optimization', value: '-98%', detail: 'MS SQL Server queries' },
+    { label: 'AI Validation Pipeline', value: '-92%', detail: 'Regression reduction' },
   ];
 
   return (
@@ -26,7 +26,7 @@ export default function About() {
 
           <div className="space-y-4 text-sm md:text-base text-text-secondary font-light leading-relaxed">
             <p>
-              I am a <strong className="text-white font-medium">Software Engineer</strong> dedicated to building robust system architectures, highly concurrent backend APIs, and predictive machine learning models. My approach combines rigorous software engineering principles with mathematical precision to deliver stable, high-throughput software systems.
+              I am an <strong className="text-white font-medium">AI & Backend Engineer</strong> dedicated to building robust system architectures, highly concurrent backend APIs, and predictive machine learning models. My approach combines rigorous software engineering principles with data-driven AI systems to deliver stable, high-throughput software systems.
             </p>
             <p>
               My professional focus is divided between constructing scalable backend frameworks (primarily using{' '}
@@ -41,10 +41,10 @@ export default function About() {
               <span className="text-white font-mono text-xs bg-surface-base px-1.5 py-0.5 rounded border border-border-subtle">
                 Docker & AWS
               </span>
-              , and exploring statistical modeling inside quantitative finance environments.
+              , and deploying machine learning pipelines (such as cross-modal transformers and sequence models) into production.
             </p>
             <p>
-              Whether parsing real-time yield curves to estimate systemic market risk or designing sub-millisecond asynchronous rate limiters for trading web sockets, I aim for absolute execution clarity, clean modular codebases, and zero extraneous dependencies.
+              Whether orchestrating LLMs to build agentic pipelines, optimizing MS SQL stored procedures for sub-millisecond querying, or configuring CI/CD container workflows, I aim for absolute execution clarity, clean modular codebases, and high performance.
             </p>
           </div>
 
@@ -71,12 +71,12 @@ export default function About() {
             </Card>
 
             <Card className="p-4" hoverEffect={true}>
-              <LineChart className="w-5 h-5 text-amber-400 mb-2" />
+              <Wrench className="w-5 h-5 text-amber-400 mb-2" />
               <h4 className="text-xs font-semibold text-white uppercase tracking-wider mb-1">
-                Quant Learner
+                Systems & MLOps
               </h4>
               <p className="text-[11px] text-text-secondary leading-normal">
-                Stochastic processes, option pricing mechanics, and yield curve diagnostics.
+                CI/CD workflows, Docker containerization, cloud systems admin, and script automation.
               </p>
             </Card>
           </div>

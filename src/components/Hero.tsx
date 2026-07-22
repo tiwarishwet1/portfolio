@@ -77,7 +77,7 @@ export default function Hero() {
             <span className="italic font-normal font-serif text-accent-primary block md:inline">
               AI systems,
             </span>{' '}
-            and quantitative solutions.
+            and robust backends.
           </motion.h1>
 
           {/* Subtitle */}
@@ -85,8 +85,8 @@ export default function Hero() {
             variants={itemVariants}
             className="text-base md:text-lg text-text-secondary leading-relaxed max-w-xl font-light"
           >
-            Software Engineer specializing in scalable backend systems, machine learning, Linux,
-            cloud technologies and quantitative finance.
+            Software Engineer specializing in scalable backend systems, machine learning pipelines,
+            Linux, containerization, and data-driven solutions.
           </motion.p>
 
           {/* Hero CTAs */}
@@ -100,6 +100,16 @@ export default function Hero() {
             >
               View Projects
               <ArrowRight className="w-3.5 h-3.5" />
+            </Button>
+            <Button
+              as="a"
+              href="/Tiwari_Shwet.pdf"
+              download="Tiwari_Shwet.pdf"
+              variant="outline"
+              size="md"
+            >
+              <Download className="w-3.5 h-3.5" />
+              Download Resume
             </Button>
             <Button
               as="a"
@@ -143,7 +153,7 @@ export default function Hero() {
                 {/* Neural net node symbols inside */}
                 <div className="flex flex-col items-center gap-1.5 z-10">
                   <Cpu className="w-6 h-6 text-accent-primary group-hover:scale-110 transition-transform duration-500" />
-                  <span className="text-[9px] font-mono text-text-secondary uppercase tracking-widest">QUANT-AI</span>
+                  <span className="text-[9px] font-mono text-text-secondary uppercase tracking-widest">AI-BACKEND</span>
                 </div>
 
                 {/* Orbit path rings with pulse effect */}
@@ -157,7 +167,7 @@ export default function Hero() {
                   SHWET TIWARI
                 </span>
                 <span className="text-[10px] font-mono text-text-secondary">
-                  RESEARCH ENG // SYSTEM ARCH
+                  AI/ML ENG // BACKEND ENG
                 </span>
               </div>
 

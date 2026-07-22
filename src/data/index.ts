@@ -11,12 +11,12 @@ import {
 
 export const learningJourneyData: LearningJourneyItem[] = [
   {
-    id: 'quant-fin',
-    title: 'Quantitative Finance & Probability',
+    id: 'llm-agents',
+    title: 'LLM Orchestration & Agentic Systems',
     status: 'Active',
-    progress: 75,
-    estimatedCompletion: 'Q4 2026',
-    currentFocus: 'Stochastic Calculus, Probability Theory, Statistics, Asset Pricing',
+    progress: 90,
+    estimatedCompletion: 'Q3 2026',
+    currentFocus: 'LangChain, LlamaIndex, OpenAI/Claude API integration, custom vector databases, RAG systems',
   },
   {
     id: 'fastapi',
@@ -71,7 +71,7 @@ export const learningJourneyData: LearningJourneyItem[] = [
 export const skillCategories: SkillCategory[] = [
   {
     name: 'Programming',
-    skills: ['Python', 'C#', 'SQL', 'Bash', 'C', 'TypeScript', 'JavaScript'],
+    skills: ['Python', 'Java', 'SQL', 'Bash', 'C', 'TypeScript', 'JavaScript'],
   },
   {
     name: 'Backend Engineering',
@@ -79,19 +79,19 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     name: 'Artificial Intelligence',
-    skills: ['Machine Learning', 'TensorFlow', 'PyTorch', 'Deep Learning', 'Hugging Face', 'Scikit-Learn', 'Feature Engineering'],
+    skills: ['Machine Learning', 'TensorFlow', 'PyTorch', 'Deep Learning', 'LLM Orchestration', 'Agents', 'Transformers', 'NLP', 'Computer Vision'],
   },
   {
     name: 'Databases',
-    skills: ['MS SQL', 'PostgreSQL', 'Redis (Caching)', 'Query Optimization', 'Database Indexing', 'Database Schema Design'],
+    skills: ['MS SQL', 'PostgreSQL', 'MySQL', 'Redis (Caching)', 'Query Optimization', 'Database Indexing', 'Database Schema Design'],
   },
   {
     name: 'Systems & DevOps',
-    skills: ['Linux', 'Docker', 'AWS (EC2, ECS, Lambda, S3)', 'Git', 'GitHub', 'CI/CD Pipelines', 'Shell Scripting'],
+    skills: ['Linux', 'Docker', 'Kubernetes', 'AWS (EC2, ECS, Lambda, S3)', 'Git', 'GitHub', 'CI/CD Pipelines', 'Shell Scripting'],
   },
   {
-    name: 'Mathematics',
-    skills: ['Statistics', 'Probability', 'Quantitative Modeling', 'Time-Series Analysis', 'Stochastic Processes'],
+    name: 'Data Science & Math',
+    skills: ['Statistics', 'Probability', 'Time-Series Forecasting', 'Exploratory Data Analysis (EDA)', 'Data Visualization', 'Pandas & NumPy'],
   },
 ];
 
@@ -99,23 +99,25 @@ export const projectsData: ProjectItem[] = [
   {
     id: 'financial-crisis',
     title: 'Financial Crisis Prediction System',
-    category: 'Quantitative Finance & ML',
-    problem: 'Traditional financial warning indicators fail to detect multi-dimensional systemic risks and non-linear economic stress correlations, leading to delayed portfolio hedging and unexpected investment drawdown.',
-    solution: 'Designed and built a robust time-series machine learning framework using PyTorch, TensorFlow, and XGBoost. The model ingests macroeconomic indexes, yield curves, and banking liquidity metrics spanning over 40 years of financial history.',
-    impact: 'Achieved an out-of-sample accuracy rate of 89% in anticipating systemic stress events 12 months in advance, providing clear directional probability metrics for macro portfolio risk management.',
-    techStack: ['Python', 'PyTorch', 'TensorFlow', 'Statistics', 'Probability', 'Pandas'],
-    githubUrl: 'https://github.com',
+    category: 'Machine Learning & Time-Series',
+    problem: 'Traditional financial warning indicators fail to detect multi-dimensional systemic risks and non-linear economic stress correlations, leading to delayed risk mitigation and unexpected losses.',
+    solution: 'Designed and built a robust time-series machine learning framework using PyTorch, TensorFlow, and XGBoost to ingest macroeconomic indexes, yield curves, and banking liquidity metrics spanning over 40 years.',
+    impact: 'Formulated a predictive risk framework using LSTM and ensemble methods to forecast market volatility. Registered copyright (Reg. No. SW-2026022638) and published in IEEE ICNTE 2026.',
+    techStack: ['Python', 'PyTorch', 'TensorFlow', 'LSTMs', 'XGBoost', 'Pandas', 'Streamlit'],
+    githubUrl: 'https://github.com/tiwarishwet1/financial-crisis-prediction',
+    researchUrl: '/Financial_Crisis_Copyright.pdf',
     imageSymbol: 'TrendingUp',
   },
   {
     id: 'depression-detection',
-    title: 'Multimodal Depression Detection',
+    title: 'SAHAI: Multimodal Depression Detection',
     category: 'Deep Learning & NLP',
     problem: 'Conventional mental health diagnostics rely entirely on subjective questionnaires, which can lead to delayed clinical support and human assessment errors.',
-    solution: 'Engineered a multimodal deep learning pipeline that processes, synchronizes, and classifies patient indicators. The system fuses raw acoustic waveforms, facial movement patterns, and transcribed textual inputs using custom cross-modal attention transformers.',
-    impact: 'Improved classification F1-score to 0.84, demonstrating a 15% improvement over baseline single-modality systems and providing an objective, secondary diagnostic decision tool.',
-    techStack: ['PyTorch', 'TensorFlow', 'Python', 'Machine Learning', 'Git', 'GitHub'],
-    githubUrl: 'https://github.com',
+    solution: 'Engineered an ensemble framework (SAHAI) integrating textual, audio, and visual modalities. It processes patient indicators including raw acoustic waveforms, facial movements, and text transcriptions using Bi-LSTM and GAN components.',
+    impact: 'Achieved an outstanding validation accuracy of 98.46%. Registered official copyright (Diary No. SW-17885/2026-CO) and published in IEEE INDIACom 2026.',
+    techStack: ['Python', 'PyTorch', 'FastAPI', 'Bi-LSTM', 'GANs', 'NLP', 'Computer Vision'],
+    githubUrl: 'https://github.com/tiwarishwet1/sahai-depression-detection',
+    researchUrl: '/SAHAI_Depression_Detection_Report.pdf',
     imageSymbol: 'Brain',
   },
   {
@@ -126,7 +128,7 @@ export const projectsData: ProjectItem[] = [
     solution: 'Created a production-ready, highly modular asynchronous API template in FastAPI. Integrated connection-pooling patterns, Redis caching strategies, token-bucket rate-limiting middleware, and strict schema validation.',
     impact: 'Slashed mean API response times by 64% and seamlessly sustained throughput of over 8,500 concurrent connections with minimal CPU utilization.',
     techStack: ['Python', 'FastAPI', 'Docker', 'AWS', 'Git', 'GitHub'],
-    githubUrl: 'https://github.com',
+    githubUrl: 'https://github.com/tiwarishwet1/fastapi-rest-apis',
     imageSymbol: 'Zap',
   },
   {
@@ -137,7 +139,7 @@ export const projectsData: ProjectItem[] = [
     solution: 'Compiled an extensive, high-performance portfolio of robust MS SQL relational designs. Implemented advanced stored procedures, common table expressions (CTEs), parameterized lookup queries, and automated table partitioning strategies linked with C# / ASP.NET backend code.',
     impact: 'Optimized query execution paths to reduce table-scan latencies by 45%, establishing a rock-solid database template for scalable transactional architectures.',
     techStack: ['MS SQL', 'C#', 'ASP.NET', 'Database Design', 'Query Tuning'],
-    githubUrl: 'https://github.com',
+    githubUrl: 'https://github.com/tiwarishwet1/sql-portfolio',
     imageSymbol: 'Database',
   },
   {
@@ -148,7 +150,7 @@ export const projectsData: ProjectItem[] = [
     solution: 'Assembled a comprehensive interactive repository of POSIX-compliant shell scripts, system tuning notes, container isolation rules, and custom process-monitoring utilities explaining virtual memory tuning and SSH parameters.',
     impact: 'Serves as an active, production-grade handbook for deploying and monitoring containerized application workloads with optimized kernel resource allocations.',
     techStack: ['Linux', 'Docker', 'Bash', 'Systems Admin', 'Git', 'GitHub'],
-    githubUrl: 'https://github.com',
+    githubUrl: 'https://github.com/tiwarishwet1/linux-notes',
     imageSymbol: 'Terminal',
   },
 ];
@@ -156,18 +158,47 @@ export const projectsData: ProjectItem[] = [
 export const researchPapers: ResearchPaper[] = [
   {
     id: 'paper-1',
-    title: 'Advancements in Multimodal Sentiment Analysis for Clinical Diagnostics',
-    authors: 'S. Tiwari, et al.',
-    publication: 'IEEE Transactions on Affective Computing',
-    conference: 'IEEE Multimodal Deep Learning Symposium',
-    status: 'Published / Peer-Reviewed',
-    abstract: 'This paper outlines a unified approach to mental health diagnostic assistance by combining auditory tone cues, facial muscle movement analysis, and transcription text semantics. By deploying cross-modal attention networks, the model resolves synchronization conflicts across disparate data streams and provides robust clinical classification probability.',
-    keywords: ['Multimodal Fusion', 'Deep Learning', 'Clinical Diagnostics', 'Transformer Models', 'Affective Computing'],
-    pdfUrl: '#',
+    title: 'Cross-Modal Synergy: Improving Depression Screening through Heterogeneous Data Fusion',
+    authors: 'Shwet Banktesh Tiwari, Vinit Sushil Navlakha, Mahek Yusuf Shah',
+    publication: 'BVICAM, New Delhi',
+    conference: '20th INDIACom; 2026 13th International Conference on Computing for Sustainable Global Development',
+    status: 'Published / Presented (April 2026)',
+    abstract: 'Presented an ensemble framework (SAHAI) integrating textual, audio, and visual modalities to screen for depressive indicators. By utilizing Bi-LSTM architectures and generative elements, the framework successfully resolves feature-alignment conflicts in clinical diagnostics.',
+    keywords: ['Multimodal Fusion', 'Deep Learning', 'Clinical Diagnostics', 'Bi-LSTM', 'Feature Alignment'],
+    pdfUrl: '/Published_Paper_Certificate.pdf',
+  },
+  {
+    id: 'paper-2',
+    title: 'Deep Ensemble Learning for Financial Crisis Prediction: An AI Framework for Industry Applications',
+    authors: 'Mahek Yusuf Shah, Shwet Tiwari, Aditya Tawade',
+    publication: 'IEEE ICNTE 2026',
+    conference: '6th Edition of International Conference on Technologies for Sustainable Development',
+    status: 'Published / Copyright Registered (SW-2026022638)',
+    abstract: 'This paper outlines a unified deep learning approach for forecasting financial systemic crises. Utilizing LSTMs and XGBoost ensemble networks, the framework analyzes multi-decade indicators to project risk directions and trigger early warnings with high out-of-sample accuracy.',
+    keywords: ['LSTM', 'Ensemble Learning', 'Time-Series Forecasting', 'Market Volatility', 'Risk Framework'],
+    pdfUrl: '/Financial_Crisis_Copyright.pdf',
   },
 ];
 
 export const certificationsData: CertificationItem[] = [
+  {
+    id: 'ibm-ai-fundamentals',
+    title: 'Artificial Intelligence Fundamentals',
+    issuer: 'IBM SkillsBuild',
+    date: 'Jan 2026',
+    status: 'Completed',
+    verificationUrl: 'https://www.credly.com/badges/7c934e31-cb55-4924-9a82-00043345a7c1',
+    description: 'Covers foundational concepts of Artificial Intelligence, including neural networks, machine learning algorithms, natural language processing, and ethical AI deployment.',
+  },
+  {
+    id: 'ibm-customer-service-ai',
+    title: 'AI-Enabled Applications for Customer Service',
+    issuer: 'IBM SkillsBuild',
+    date: 'Jan 2026',
+    status: 'Completed',
+    verificationUrl: 'https://www.credly.com/go/TsVjDZpL',
+    description: 'Validates ability to design and integrate AI systems, conversational assistants, and NLP services within business customer support architectures.',
+  },
   {
     id: 'aws-solutions-architect',
     title: 'AWS Certified Solutions Architect – Associate',
@@ -223,7 +254,7 @@ export const githubRepos: GithubRepo[] = [
     stars: 312,
     forks: 41,
     language: 'Python',
-    repoUrl: 'https://github.com',
+    repoUrl: 'https://github.com/tiwarishwet1/fastapi-rest-apis',
   },
   {
     id: 'repo-2',
@@ -232,7 +263,7 @@ export const githubRepos: GithubRepo[] = [
     stars: 204,
     forks: 28,
     language: 'Python',
-    repoUrl: 'https://github.com',
+    repoUrl: 'https://github.com/tiwarishwet1/financial-crisis-prediction',
   },
   {
     id: 'repo-3',
@@ -241,7 +272,7 @@ export const githubRepos: GithubRepo[] = [
     stars: 145,
     forks: 12,
     language: 'SQL',
-    repoUrl: 'https://github.com',
+    repoUrl: 'https://github.com/tiwarishwet1/sql-portfolio',
   },
 ];
 
@@ -306,9 +337,9 @@ export const timelineEvents: TimelineEvent[] = [
   },
   {
     id: 'timeline-5',
-    title: 'Quantitative Finance Exploration',
-    description: 'Applied statistical methods and probability theory to asset pricing. Formulated predictive modeling systems to forecast systemic macroeconomic stress factors.',
-    iconName: 'TrendingUp',
-    tag: 'Financial Modeling',
+    title: 'Backend Engineer Intern at Pristine Nexus',
+    description: 'Spearheaded backend microservices development with FastAPI (latency improved by 94%) and optimized MS SQL stored procedures (execution time reduced by 98%). Automated data pipelines and containerized applications with Docker.',
+    iconName: 'Server',
+    tag: 'Professional Experience',
   },
 ];

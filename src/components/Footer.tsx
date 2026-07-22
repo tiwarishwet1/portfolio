@@ -43,8 +43,8 @@ function DatabaseIcon(props: React.SVGProps<SVGSVGElement>) {
 }
 
 const socialLinks = [
-  { name: 'GitHub', href: 'https://github.com', icon: Github },
-  { name: 'LinkedIn', href: 'https://linkedin.com', icon: Linkedin },
+  { name: 'GitHub', href: 'https://github.com/tiwarishwet1', icon: Github },
+  { name: 'LinkedIn', href: 'https://linkedin.com/in/tiwarishwet1', icon: Linkedin },
   { name: 'Medium', href: 'https://medium.com', icon: BookOpen },
   { name: 'Hashnode', href: 'https://hashnode.com', icon: Globe },
   { name: 'Docker Hub', href: 'https://hub.docker.com', icon: Github }, // Fallback to Github icon or direct text
@@ -83,7 +83,7 @@ export default function Footer() {
                 GET IN TOUCH
               </span>
               <h2 className="text-3xl md:text-4xl font-serif font-light text-white tracking-tight mt-2 mb-6">
-                Let's discuss systems & quantitative ideas.
+                Let's discuss systems & AI/ML pipelines.
               </h2>
 
               <form onSubmit={handleSubmit} className="space-y-4 max-w-lg">
@@ -125,7 +125,7 @@ export default function Footer() {
                     required
                     value={formState.message}
                     onChange={(e) => setFormState({ ...formState, message: e.target.value })}
-                    placeholder="Describe your architecture bottlenecks or quantitative research requirements..."
+                    placeholder="Describe your architecture bottlenecks or AI/ML research requirements..."
                     className="w-full bg-background-base border border-border-subtle rounded-xl py-2.5 px-4 text-xs text-white focus:border-accent-primary focus:outline-none transition-all placeholder-text-secondary resize-none"
                   />
                 </div>

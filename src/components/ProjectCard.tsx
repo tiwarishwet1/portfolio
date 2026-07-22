@@ -85,6 +85,20 @@ export default function ProjectCard({ project, isEven = true, icon: Icon = Cpu }
                 <ArrowUpRight className="w-3 h-3 text-text-secondary" />
               </Button>
             )}
+            {project.researchUrl && (
+              <Button
+                as="a"
+                href={project.researchUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="outline"
+                size="sm"
+                className="hover:border-white/20"
+              >
+                View Report / Certificate
+                <ArrowUpRight className="w-3 h-3 text-text-secondary" />
+              </Button>
+            )}
           </div>
         </div>
 
