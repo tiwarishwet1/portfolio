@@ -16,7 +16,7 @@ export default function Card({
 }: CardProps) {
   const hoverProps = hoverEffect
     ? {
-        whileHover: { y: -4, borderColor: 'rgba(124,108,255,0.25)' },
+        whileHover: { y: -4 },
         transition: { duration: 0.3, ease: 'easeOut' },
       }
     : {};
@@ -24,7 +24,7 @@ export default function Card({
   return (
     <motion.div
       onClick={onClick}
-      className={`bg-card-base border border-border-subtle rounded-2xl p-6 relative overflow-hidden transition-all duration-300 ${
+      className={`liquid-glass rounded-2xl p-6 relative overflow-hidden transition-all duration-300 ${
         onClick ? 'cursor-pointer' : ''
       } ${className}`}
       {...hoverProps}

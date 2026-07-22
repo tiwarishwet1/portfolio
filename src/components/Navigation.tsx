@@ -63,7 +63,7 @@ export default function Navigation({ activeSection }: NavigationProps) {
         scrolled ? 'top-4' : 'top-6'
       }`}
     >
-      <div className="w-full glass-panel bg-background-base/80 backdrop-blur-[16px] border border-border-subtle rounded-full py-3 px-6 md:px-8 flex items-center justify-between shadow-lg">
+      <div className="w-full liquid-glass rounded-full py-3 px-6 md:px-8 flex items-center justify-between shadow-lg">
         {/* Brand Logo */}
         <a
           href="#"
@@ -161,7 +161,7 @@ export default function Navigation({ activeSection }: NavigationProps) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.15 }}
-            className="absolute top-16 left-4 right-4 bg-card-base/95 backdrop-blur-[20px] border border-border-subtle rounded-2xl p-5 shadow-2xl flex flex-col gap-4 md:hidden z-40"
+            className="absolute top-16 left-4 right-4 liquid-glass rounded-2xl p-5 shadow-2xl flex flex-col gap-4 md:hidden z-40"
           >
             <ul className="flex flex-col gap-1">
               {NAV_ITEMS.map((item) => {

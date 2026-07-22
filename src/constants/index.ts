@@ -6,7 +6,6 @@ export const SECTION_IDS = [
   'capabilities',
   'journey',
   'research',
-  'writing',
   'certifications',
   'github',
 ];
@@ -18,7 +17,6 @@ export const NAV_ITEMS = [
   { label: 'Capabilities', href: '#capabilities', id: 'capabilities' },
   { label: 'Journey', href: '#journey', id: 'journey' },
   { label: 'Research', href: '#research', id: 'research' },
-  { label: 'Writing', href: '#writing', id: 'writing' },
 ];
 
 export const SITE_METADATA = {

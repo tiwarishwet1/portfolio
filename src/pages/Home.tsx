@@ -11,7 +11,6 @@ const LearningJourney = lazy(() => import('../components/LearningJourney'));
 const Skills = lazy(() => import('../components/Skills'));
 const Timeline = lazy(() => import('../components/Timeline'));
 const Research = lazy(() => import('../components/Research'));
-const Writing = lazy(() => import('../components/Writing'));
 const Certifications = lazy(() => import('../components/Certifications'));
 const Github = lazy(() => import('../components/Github'));
 const Footer = lazy(() => import('../components/Footer'));
@@ -35,6 +34,10 @@ export default function Home() {
     <div className="bg-background-base text-white min-h-screen relative selection:bg-accent-primary/20 selection:text-white scroll-smooth">
       {/* Absolute background grid pattern */}
       <div className="fixed inset-0 bg-[radial-gradient(#ffffff03_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none z-0" />
+
+      {/* Drifting Background Blobs for Liquid Glass effect */}
+      <div className="absolute top-[10%] right-[15%] w-[450px] h-[450px] rounded-full bg-accent-primary opacity-[0.08] dark:opacity-[0.05] blur-[120px] pointer-events-none z-0 animate-blob-1" />
+      <div className="absolute bottom-[20%] left-[10%] w-[400px] h-[400px] rounded-full bg-accent-secondary opacity-[0.08] dark:opacity-[0.05] blur-[120px] pointer-events-none z-0 animate-blob-2" />
 
       {/* Floating glass navigation */}
       <Navigation activeSection={activeSection} />
@@ -71,9 +74,6 @@ export default function Home() {
             <Research />
           </div>
 
-          <div id="writing">
-            <Writing />
-          </div>
 
           <div id="certifications">
             <Certifications />

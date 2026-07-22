@@ -182,6 +182,15 @@ export const researchPapers: ResearchPaper[] = [
 
 export const certificationsData: CertificationItem[] = [
   {
+    id: 'ibm-data-analytics',
+    title: 'Certificate Course on Data Analytics',
+    issuer: 'IBM SkillsBuild',
+    date: 'Jan 2026',
+    status: 'Completed',
+    verificationUrl: '/Certificate_Data_Analytics_IBM.pdf',
+    description: 'Completed an intensive program covering exploratory data analysis, data preparation, statistical forecasting, and analytical storytelling with an A+ Grade under the Advanced IT Skills Program.',
+  },
+  {
     id: 'ibm-ai-fundamentals',
     title: 'Artificial Intelligence Fundamentals',
     issuer: 'IBM SkillsBuild',
@@ -198,51 +207,6 @@ export const certificationsData: CertificationItem[] = [
     status: 'Completed',
     verificationUrl: 'https://www.credly.com/go/TsVjDZpL',
     description: 'Validates ability to design and integrate AI systems, conversational assistants, and NLP services within business customer support architectures.',
-  },
-  {
-    id: 'aws-solutions-architect',
-    title: 'AWS Certified Solutions Architect – Associate',
-    issuer: 'Amazon Web Services (AWS)',
-    date: 'Dec 2024',
-    status: 'Completed',
-    verificationUrl: '#',
-    description: 'Validates deep expertise in deploying secure, highly available, cost-effective, and fault-tolerant distributed cloud architectures on AWS.',
-  },
-  {
-    id: 'ms-sql-cert',
-    title: 'MS SQL Server Database Specialist',
-    issuer: 'Microsoft / Certification Board',
-    date: 'March 2025',
-    status: 'Completed',
-    verificationUrl: '#',
-    description: 'Demonstrates expertise in writing optimized T-SQL queries, structuring relational databases, index planning, and managing transaction concurrency.',
-  },
-  {
-    id: 'deep-learning-spec',
-    title: 'Machine Learning & Deep Learning Specialist',
-    issuer: 'Coursera / DeepLearning.AI',
-    date: 'June 2025',
-    status: 'Completed',
-    verificationUrl: '#',
-    description: 'Covers fundamental and advanced deep learning workflows: Neural Networks, Convolutional Networks, sequence models (LSTMs), and Hyperparameter Tuning.',
-  },
-  {
-    id: 'fastapi-backend-developer',
-    title: 'FastAPI Advanced Backend Developer',
-    issuer: 'Advanced Backend Credentials',
-    date: 'Jan 2026',
-    status: 'Completed',
-    verificationUrl: '#',
-    description: 'Validates proficiency in asynchronous programming in Python, building robust REST APIs, securing endpoints, and designing Redis/Postgres connection grids.',
-  },
-  {
-    id: 'leetcode-top-five',
-    title: 'LeetCode Problem Solving Credentials (Top 5%)',
-    issuer: 'LeetCode Platform',
-    date: 'Ongoing',
-    status: 'Active',
-    verificationUrl: '#',
-    description: 'Solved more than 650+ algorithmic challenges focusing on optimal runtime and memory complexities: Dynamic Programming, Graph Traversals, and Array Tuning.',
   },
 ];
 
@@ -276,35 +240,7 @@ export const githubRepos: GithubRepo[] = [
   },
 ];
 
-export const writingArticles: WritingArticle[] = [
-  {
-    id: 'article-1',
-    title: 'Deconstructing Asynchronous Event Loops in Modern FastAPI Services',
-    platform: 'Medium',
-    date: 'May 14, 2025',
-    readTime: '9 min read',
-    link: '#',
-    excerpt: 'An in-depth systems level exploration of why async/await in Python can suffer from hidden bottlenecks, and how to configure UVicorn and Gunicorn workers to maximize threadpool efficiency.',
-  },
-  {
-    id: 'article-2',
-    title: 'How to Build a High-Performance C# Core Layer in ASP.NET Web APIs',
-    platform: 'Hashnode',
-    date: 'April 02, 2025',
-    readTime: '11 min read',
-    link: '#',
-    excerpt: 'A comprehensive guide to leveraging Entity Framework Core connection pools, minimizing garbage collection spikes, and designing responsive middleware pipelines.',
-  },
-  {
-    id: 'article-3',
-    title: 'Demystifying the Linux Kernel Process Scheduler: A Guide for Systems Engineers',
-    platform: 'Dev.to',
-    date: 'Feb 18, 2025',
-    readTime: '8 min read',
-    link: '#',
-    excerpt: 'A practical, step-by-step deep dive into POSIX thread priorities, scheduling algorithms, and reading system parameters under high concurrency loads.',
-  },
-];
+export const writingArticles: WritingArticle[] = [];
 
 export const timelineEvents: TimelineEvent[] = [
   {
