@@ -81,7 +81,7 @@ export default function Footer() {
                 GET IN TOUCH
               </span>
               <h2 className="text-3xl md:text-4xl font-serif font-light text-white tracking-tight mt-2 mb-6">
-                Let's discuss systems & AI/ML pipelines.
+                Let's start a conversation.
               </h2>
 
               <form onSubmit={handleSubmit} className="space-y-4 max-w-lg">
@@ -95,7 +95,7 @@ export default function Footer() {
                       required
                       value={formState.name}
                       onChange={(e) => setFormState({ ...formState, name: e.target.value })}
-                      placeholder="Alan Turing"
+                      placeholder="Your Name"
                       className="w-full bg-background-base border border-border-subtle rounded-xl py-2.5 px-4 text-xs text-white focus:border-accent-primary focus:outline-none transition-all placeholder-text-secondary"
                     />
                   </div>
@@ -108,7 +108,7 @@ export default function Footer() {
                       required
                       value={formState.email}
                       onChange={(e) => setFormState({ ...formState, email: e.target.value })}
-                      placeholder="turing@princeton.edu"
+                      placeholder="you@example.com"
                       className="w-full bg-background-base border border-border-subtle rounded-xl py-2.5 px-4 text-xs text-white focus:border-accent-primary focus:outline-none transition-all placeholder-text-secondary"
                     />
                   </div>
@@ -123,7 +123,7 @@ export default function Footer() {
                     required
                     value={formState.message}
                     onChange={(e) => setFormState({ ...formState, message: e.target.value })}
-                    placeholder="Describe your architecture bottlenecks or AI/ML research requirements..."
+                    placeholder="Tell me about your project, backend bottlenecks, or research ideas..."
                     className="w-full bg-background-base border border-border-subtle rounded-xl py-2.5 px-4 text-xs text-white focus:border-accent-primary focus:outline-none transition-all placeholder-text-secondary resize-none"
                   />
                 </div>
@@ -134,12 +134,12 @@ export default function Footer() {
                   className="w-full sm:w-auto"
                 >
                   {isSubmitting ? (
-                    <span>Transmitting...</span>
+                    <span>Sending...</span>
                   ) : submitted ? (
-                    <span>Transmission Successful ✓</span>
+                    <span>Message Sent ✓</span>
                   ) : (
                     <>
-                      <span>Transmit Message</span>
+                      <span>Send Message</span>
                       <Send className="w-3.5 h-3.5" />
                     </>
                   )}
@@ -185,7 +185,7 @@ export default function Footer() {
                 <Mail className="w-4 h-4 text-accent-primary" />
                 <div className="flex flex-col">
                   <span className="text-[10px] font-mono text-text-secondary uppercase">
-                    DIRECT DISPATCH
+                    EMAIL DIRECTLY
                   </span>
                   <a
                     href="mailto:tiwarishwet30@gmail.com"
@@ -210,11 +210,10 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row justify-between items-center border-t border-border-subtle/50 pt-8 mt-12 text-[11px] font-mono text-text-secondary gap-4">
           <div className="flex flex-col items-center sm:items-start gap-1">
             <span className="text-white font-serif text-xs font-semibold">Shwet Tiwari</span>
-            <span>© 2026. Engineered with absolute mathematical precision.</span>
+            <span>© 2026. Handcrafted with focus and precision.</span>
           </div>
-          <div className="flex items-center gap-6">
-            <span>SECURE SHELL (v2.0)</span>
-            <span>PING: 14ms</span>
+          <div className="flex items-center gap-6 text-[10px]">
+            <span>Active & Open to Opportunities</span>
           </div>
         </div>
       </div>
